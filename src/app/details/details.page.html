@@ -11,7 +11,11 @@
     <ion-card-header>
       <ion-card-subtitle>{{ Image.name}}</ion-card-subtitle>
       <ion-label>{{ Image.price}}</ion-label>
+      <ion-label>{{ Image.description}}</ion-label>
+      
 
     </ion-card-header>
+    <!-- <ion-button expand="block" (click)="goAnOtherPage()"routerDirection="root">Let's Started</ion-button> -->
+    <ion-button (click)="nextpage()">Let's Started</ion-button>
   </ion-card>
 </ion-content>

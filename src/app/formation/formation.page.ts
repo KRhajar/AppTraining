@@ -4,18 +4,19 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-formation',
   templateUrl: './formation.page.html',
-  styleUrls: ['./formation.page.css'],
+  styleUrls: ['./formation.page.scss'],
 })
 export class FormationPage implements OnInit {
   firebasename1: string; 
   firebasename2: string; 
   firebasemail : string
   firebasemobile : string
-  constructor(
-    public router:Router,
+  constructor(private route: Router
+    ,
 
     public firestore: AngularFirestore
   ) {  }
@@ -33,6 +34,10 @@ export class FormationPage implements OnInit {
       )
       ;
   }	
+  nextpage() {
+    this.route.navigate(['/confirmation']);
+  }
+  
 
 
 }

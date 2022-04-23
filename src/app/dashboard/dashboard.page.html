@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>App Dashboard</ion-title>
+    <ion-title> Dashboard</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
         <p>User email : <strong>{{ userDetail }}</strong></p>
       </ion-col>
     </ion-row>
-
-    <ion-button type="submit" color="danger" expand="block" (click)="signOut()">Signout</ion-button>
+    <ion-button (click)="nextpage()">Let's Started</ion-button>
+    <ion-button type="submit"  expand="block" (click)="signOut()">Signout</ion-button>
   </ion-grid>
 </ion-content>

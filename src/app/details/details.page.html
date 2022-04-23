@@ -9,13 +9,14 @@
   <ion-card  >
     <ion-img src={{Image.url}}></ion-img>   
     <ion-card-header>
-      <ion-card-subtitle>{{ Image.name}}</ion-card-subtitle>
-      <ion-label>{{ Image.price}}</ion-label>
-      <ion-label>{{ Image.description}}</ion-label>
-      
+      <ion-label><span class="b">Title: </span>{{ Image.name}}</ion-label><br/>
+      <ion-label ><span class="b">Price: </span> {{ Image.price}}</ion-label> <br/>
+      <ion-label><span class="b">Description: </span> {{ Image.description}}</ion-label>
 
+
+     
     </ion-card-header>
-    <!-- <ion-button expand="block" (click)="goAnOtherPage()"routerDirection="root">Let's Started</ion-button> -->
-    <ion-button (click)="nextpage()">Let's Started</ion-button>
+  
+    <ion-button expand="block" color="primary" (click)="nextpage()">Let's Started</ion-button>
   </ion-card>
 </ion-content>

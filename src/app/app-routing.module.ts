@@ -44,6 +44,10 @@ const routes: Routes = [
   {
     path: 'formation',
     loadChildren: () => import('./formation/formation.module').then( m => m.FormationPageModule)
+  },
+  {
+    path: 'confirmation',
+    loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
   }
 ];
 @NgModule({

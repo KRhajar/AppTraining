@@ -25,6 +25,14 @@ form {
     margin-top: 5rem;
   }
 }
+.wrap-input {
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin-bottom : 26px;
+  box-shadow: 0 10px 10px 0px rgba(186, 216, 239, 0.12);
+
+
+}
 
 .footer-text {
   text-align: center;
@@ -59,4 +67,30 @@ form {
     font-size: 1rem;
     transition: 0.3s;
   }
+}
+.container-form-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  0 20px;
+  min-width: 160px;
+  height: 42px;
+ text-transform: uppercase;
+ padding-top: 5px;
+}
+ion-button{
+  --ion-color-primary : #fa578e; ;
+
+
+
+}
+ion-input{
+
+
+  margin-top: 30px;
+}
+.label{
+   font-size: large;
+   font-weight: bold;
+
 }

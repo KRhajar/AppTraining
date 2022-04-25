@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>formation</ion-title>
+    <ion-title>Traning Form</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -13,25 +13,26 @@
 
 
   <ion-item> 
-    <ion-label class="ah" position="stacked"><ion-icon name="person"></ion-icon>   First Name :  </ion-label>
+    <ion-label class="ah" position="stacked">  <div class="clas"> <ion-icon name="person"></ion-icon> First Name : </div> </ion-label>
     <ion-input [(ngModel)]='firebasename1'></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="stacked"> <ion-icon name="person"></ion-icon>   Last Name : </ion-label>
+    <ion-label position="stacked"><div class="clas"> <ion-icon name="person"></ion-icon>   Last Name :  </div></ion-label>
     <ion-input [(ngModel)]='firebasename2'></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="stacked"> <ion-icon name="mail"></ion-icon>   Email : </ion-label>
+    <ion-label position="stacked"> <div class="clas"> <ion-icon name="mail"></ion-icon>   Email :</div> </ion-label>
     <ion-input [(ngModel)]='firebasemail'></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="stacked"><ion-icon name="cawll"></ion-icon>   Mobile : </ion-label>
+    <ion-label position="stacked">  <div class="clas"><ion-icon name="call"></ion-icon>   Number: </div></ion-label>
     <ion-input [(ngModel)]='firebasemobile'></ion-input>
   </ion-item>
+  
 
-<ion-button (click)="nextpage()" expand="block">Submit</ion-button>
+<ion-button (click)="nextpage()" expand="block">Confirmation of registration</ion-button>
 
 </ion-content>

@@ -37,4 +37,8 @@ export class DashboardPage implements OnInit {
         console.log(error);
       })
   }
+  nextpage() {
+    this.router.navigate(['/home']);
+  }
+  
 }

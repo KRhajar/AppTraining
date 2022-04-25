@@ -5,15 +5,25 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-grid>
-    <ion-row>
-      <ion-col text-center>
-        Welcome User!
 
-        <p>User email : <strong>{{ userDetail }}</strong></p>
-      </ion-col>
+
+  <ion-grid >
+    <ion-row justify-content-center align-items-center style="height: 100%;">
+
+        <ion-col size="12">
+          Welcome User!
+
+          <p>User email : <strong>{{ userDetail }}</strong></p>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="nextpage()"> home </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button type="submit"  expand="block" (click)="signOut()">Signout</ion-button>
+        </ion-col>
+
+   
     </ion-row>
-    <ion-button (click)="nextpage()">Let's Started</ion-button>
-    <ion-button type="submit"  expand="block" (click)="signOut()">Signout</ion-button>
   </ion-grid>
+
 </ion-content>
